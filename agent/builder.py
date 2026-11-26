@@ -48,6 +48,7 @@ def _open_brave(url):
     try:
         subprocess.Popen(["cmd", "/c", "start", "brave", url], shell=False)
     except Exception:
+        webbrowser.open(url)
 
 
 def _slug(name):
