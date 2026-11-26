@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>JARVIS</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="/styles.css"></head>
+<body>
+<canvas id="cv"></canvas>
+<div id="banner" hidden></div>
+<aside id="left">
+  <header><b>JARVIS</b><span id="badge"></span><span id="model"></span><span id="voice"></span><span id="stats"></span></header>
+  <h3>Inspector</h3>
+  <div id="insp" class="card"><p class="dim">Click a node to focus it. Shift-click a second to trace the path.</p></div>
+  <h3>Top hubs</h3>
+  <ol id="hubs" class="card"></ol>
+  <p class="hint">drag · scroll to zoom · shift-click to trace</p>
+</aside>
+<aside id="right">
+  <h3>Filter</h3>
+  <ul id="filter" class="card"></ul>
+  <div id="reactor" data-state="idle"><svg viewBox="-60 -60 120 120"><g id="ticks"></g><circle r="34" class="ring"/><circle r="26" class="arc"/><circle r="6" class="core"/></svg><span id="rstate">idle</span></div>
+  <div id="resp" class="card" hidden><p id="asked"></p><p id="say"></p><div id="cardbox"></div></div>
+</aside>
+<footer id="bar">
+  <input id="ask" disabled aria-label="Ask JARVIS">
+  <canvas id="bars" width="96" height="22"></canvas><button id="mic" title="Listen / stop (Space, Esc)">mic</button><button id="mute" title="Mute JARVIS's voice">mute</button>
+  <button data-tool="brief_me" disabled>brief</button><button data-tool="plan_day" disabled>plan</button><button data-tool="memory_list" disabled title="Saved facts">memory</button>
+  <span id="caption">press mic, then talk</span>
+</footer>
+<script src="/graph.js"></script><script src="/app.js"></script>
+</body></html>

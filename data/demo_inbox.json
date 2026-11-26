@@ -1,0 +1,30 @@
+[
+ {
+  "from": "Dev Malhotra",
+  "email": "dev@maple-dental.example",
+  "subject": "Booking site: can we move the call?",
+  "unread": true,
+  "days_ago": 0
+ },
+ {
+  "from": "Priya Kapoor",
+  "email": "priya@brightleaf.example",
+  "subject": "Need a landing page, what's your rate?",
+  "unread": true,
+  "days_ago": 1
+ },
+ {
+  "from": "Lattice Labs",
+  "email": "talent@lattice-labs.example",
+  "subject": "Interview slots",
+  "unread": true,
+  "days_ago": 4
+ },
+ {
+  "from": "Meera Iyer",
+  "email": "meera@tidewater.example",
+  "subject": "Re: invoice",
+  "unread": false,
+  "days_ago": 2
+ }
+]
